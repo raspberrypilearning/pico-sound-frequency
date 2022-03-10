@@ -1,59 +1,30 @@
-## Introduction
+You can make interesting, and annoying, sound effects by playing short sounds at different frequencies. 
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+We hear different frequencies as different musical notes, tones or pitches. 
 
-### What you will make
-
---- no-print ---
-Add instructions for interacting with the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+This example gradually increases in frequency to create a positive sound:
+        
+--- code ---
 ---
-title: What you will need
+language: python
 ---
-### Hardware
+def win(): # rising frequency
+    for i in range(2000, 5000, 100): 
+        speaker.play(i, 0.05) # short duration
+        
+--- /code ---
 
-+ A computer or tablet capable of running Scratch 3
+This example decreases the pitch to create a bird chirping sound:
 
-### Software
-
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
-
---- /collapse ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will learn
+language: python
 ---
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
+def chirp(): # series of high-pitched chirps
+    for _ in range(2): # decreasing frequency
+        for i in range(5000, 2999, -100):
+            speaker.play(i, 0.02) # very short duration
+        sleep(0.2)
+ --- /code ---
+ 
+ Play around with playing short notes and changing the frequency in a `for` loop. Use frequences between `150` and `10000`. 
