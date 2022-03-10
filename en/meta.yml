@@ -1,11 +1,9 @@
-title: Making sounds from frequencies
+title: Make sounds from frequencies
 hero_image: images/banner.png
-description: pico-sound-frequency description
+description: Make sounds by playing and changing frequencies on a passive buzzer.
 version: 4
 listed: false
 copyedit: false
 last_tested: "2022-03-10"
 steps:
-  - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title:  Make sounds from frequencies
