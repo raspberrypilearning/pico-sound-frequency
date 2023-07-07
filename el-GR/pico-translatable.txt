@@ -1,0 +1,4 @@
+win
+speaker
+chirp
+range
