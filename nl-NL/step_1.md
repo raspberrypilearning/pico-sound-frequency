@@ -1,8 +1,8 @@
-You can make interesting, and annoying, sound effects by playing short sounds at different frequencies.
+Je kunt interessante en irritante geluidseffecten maken door korte geluiden op verschillende frequenties af te spelen.
 
-We hear different frequencies as different musical notes, tones or pitches.
+We horen verschillende frequenties als verschillende muzieknoten, tonen of toonhoogtes.
 
-This example gradually increases in frequency to create a positive sound:
+Dit voorbeeld neemt geleidelijk toe in frequentie om een positief geluid te creëren:
 
 --- code ---
 ---
@@ -12,7 +12,7 @@ def win(): # rising frequency for i in range(2000, 5000, 100): speaker.play(i, 0
 
 --- /code ---
 
-This example decreases the pitch to create a bird chirping sound:
+In dit voorbeeld wordt de toonhoogte verlaagd om een vogelgeluid te creëren:
 
 --- code ---
 ---
@@ -20,4 +20,4 @@ language: python
 ---
 def chirp(): # series of high-pitched chirps for _ in range(2): # decreasing frequency for i in range(5000, 2999, -100): speaker.play(i, 0.02) # very short duration sleep(0.2) --- /code ---
 
- Play around with playing short notes and changing the frequency in a `for` loop. Use frequences between `150` and `10000`. 
+ Experimenteer met het afspelen van korte noten en het veranderen van de frequentie in een `for` lus. Je kunt waarden gebruiken tussen `150` en `10000`. 
