@@ -1,5 +1,5 @@
-rising frequency
-short duration
-series of high-pitched chirps
-decreasing frequency
-very short duration
+fréquence croissante
+courte durée
+séries de gazouillis aigus
+fréquence décroissante
+très courte durée
